@@ -49,14 +49,14 @@ export function BentoGridDemo() {
 }
 
 const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100"></div>
 );
 const items = [
   {
     id: 'SnakeGame',
     title: "Rust Based Snake Game",
     description: "Moder take on a true classic. Blazing fast and memory safe.",
-    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
                 <Image src={'/SnakeGameScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
     icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
@@ -65,7 +65,7 @@ const items = [
     id: 'RockPaperScissors',
     title: "Gesture Controlled Rock Paper Scissors",
     description: "Machine learning used for a little fun. Think the model enojoys playing?",
-    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
                 <Image src={'/RPSScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
     icon: <IconScissors className="h-4 w-4 text-neutral-500" />,
@@ -74,7 +74,7 @@ const items = [
     id: 'MedicationDispenser',
     title: "Automated Medication Dispenser",
     description: "Built to safegaurd patients with memory loss from unintended dosage.",
-    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
                 <Image src={'/DispenserScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
     icon: <IconPill className="h-4 w-4 text-neutral-500" />,
@@ -84,7 +84,7 @@ const items = [
     title: "JobTrk",
     description:
       "Track all your job applications in one full stack web app. Ditch the clutter.",
-    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
                 <Image src={'/JobTrkScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
     icon: <IconChartInfographic className="h-4 w-4 text-neutral-500" />,
@@ -93,7 +93,7 @@ const items = [
     id: '',
     title: "Portfolio Website",
     description: "Look around!",
-    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
                 <Image src={'/PortfolioScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
     icon: <IconHomeRibbon className="h-4 w-4 text-neutral-500" />,
