@@ -75,6 +75,24 @@ const projects = [
         ],
         description: "This game uses MediaPipe landmark detection to gather information about the player's hand's position. These landmarks are fed into a custom model which I trained using Scikit Learn. The game is played with the computer as an opponent, generating random actions to compete with."
     },
+    {
+        projectId: 'SortingAlgorithmVisualizer',
+        projectTitle: 'Sorting Algorithm Visualizer',
+        imgSrc: '/SortingVisualizerScreenshot.png',
+        linkSrc: 'https://algorithm-visualizer.jonathanlyashko.com/',
+        tools: [
+            'NextJS',
+            'React',
+            'Javascript',
+        ],
+        features: [
+            'Various Algorithms',
+            'Control Size',
+            'Control Speed',
+            'Highlight operations'
+        ],
+        description: "Visual tool for helping users understand how various sorting algorithms operate. All operations are highlighted and slowed down for a meaningful understanding."
+    },
 ];
 
 export default projects;

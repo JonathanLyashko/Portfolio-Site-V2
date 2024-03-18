@@ -15,6 +15,7 @@ import {
   IconChartInfographic,
   IconHomeRibbon,
   IconTools,
+  IconArrowsSort,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,8 +27,11 @@ export function BentoGridDemo() {
       <h2 className="text-black text-4xl font-bold text-center">
         My Projects
       </h2>
-      <h3 className="text-black mt-4 mb-12 text-2xl font-bold text-center">
+      <h3 className="text-black mt-4 mb-4 text-2xl font-bold text-center">
         Have a look at some of the things I&apos;ve built
+      </h3>
+      <h3 className="text-black mt-2 mb-10 text-sm italic font-bold text-center">
+        Click on any card to find out more
       </h3>
       <BentoGrid className="max-w-4xl mx-auto pb-24">
         {items.map((item, i) => (
@@ -55,7 +59,7 @@ const items = [
   {
     id: 'SnakeGame',
     title: "Rust Based Snake Game",
-    description: "Moder take on a true classic. Blazing fast and memory safe.",
+    description: "Modern take on a true classic. Blazing fast and memory safe.",
     header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
                 <Image src={'/SnakeGameScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
@@ -64,20 +68,20 @@ const items = [
   {
     id: 'RockPaperScissors',
     title: "Gesture Controlled Rock Paper Scissors",
-    description: "Machine learning used for a little fun. Think the model enojoys playing?",
+    description: "Machine learning used for a little fun. Think the model enjoys playing?",
     header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
                 <Image src={'/RPSScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
     icon: <IconScissors className="h-4 w-4 text-neutral-500" />,
   },
   {
-    id: 'MedicationDispenser',
-    title: "Automated Medication Dispenser",
-    description: "Built to safegaurd patients with memory loss from unintended dosage.",
+    id: 'SortingAlgorithmVisualizer',
+    title: "Sorting Algorithm Visualizer",
+    description: "Tool to help visualize and learn about various sorting algorithms.",
     header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
-                <Image src={'/DispenserScreenshot.png'} alt="project image" width={1050} height={500} />
+                <Image src={'/SortingVisualizerScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
-    icon: <IconPill className="h-4 w-4 text-neutral-500" />,
+    icon: <IconArrowsSort className="h-4 w-4 text-neutral-500" />,
   },
   {
     id: 'JobTrk',
@@ -88,6 +92,15 @@ const items = [
                 <Image src={'/JobTrkScreenshot.png'} alt="project image" width={1050} height={500} />
             </div>,
     icon: <IconChartInfographic className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    id: 'MedicationDispenser',
+    title: "Automated Medication Dispenser",
+    description: "Built to safegaurd patients with memory loss from unintended dosage.",
+    header: <div className="flex flex-1 w-full h-full overflow-hidden min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100">
+                <Image src={'/DispenserScreenshot.png'} alt="project image" width={1050} height={500} />
+            </div>,
+    icon: <IconPill className="h-4 w-4 text-neutral-500" />,
   },
   {
     id: '',

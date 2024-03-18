@@ -24,7 +24,7 @@ import {
 
 function Skills() {
   return (
-    <div className='flex flex-col h-screen pb-12 gap-12 items-center justify-center bg-dot-black/[0.1]'>
+    <div className='flex flex-col h-fill md:h-4/5 pb-12 gap-12 items-center justify-center bg-dot-black/[0.1]'>
         <div>
             <h2 className="text-black mt-12 text-4xl font-bold text-center">
                 Languages and Frameworks

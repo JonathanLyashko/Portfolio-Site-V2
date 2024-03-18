@@ -13,7 +13,9 @@ export default function Home() {
       <Landing />
       <MacbookScrollDemo />
       <EvervaultCardDemo />
-      <BentoGridDemo />
+      <section id="projects">
+        <BentoGridDemo />
+      </section>
       <hr className="mx-auto h-px border-0 bg-gray-700 w-6/12" />
       <Skills />
       <BackgroundBeamsDemo />
