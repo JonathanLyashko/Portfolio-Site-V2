@@ -2,11 +2,11 @@
 import React from 'react'
 import { redirect } from 'next/navigation';
 import projects from './project-list.js';
-import { CustomButton } from '@/components/ui/CustomMovingBackground';
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import Link from 'next/link.js';
 
 const ProjectPage = ({ params }: { params: { id: string }}) => {
 
@@ -45,12 +45,16 @@ const ProjectPage = ({ params }: { params: { id: string }}) => {
 
                 <div className='flex flex-col-reverse items-center justify-around mt-4'>
                     <div className='my-8 flex gap-4'>
-                        <CustomButton src={projects[index].linkSrc} className='flex gap-2'>
-                            Preview
-                        </CustomButton>
-                        <CustomButton target='_self' src="/#projects" className='bg-black border-2'>
-                            Home
-                        </CustomButton>
+                        <Link href={projects[index].linkSrc} target='_blank' >
+                            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-3xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                                Preview
+                            </button>
+                        </Link>
+                        <Link href="/#projects">
+                            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-3xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                                Home
+                            </button>
+                        </Link>
                     </div>
                     <div className="flex flex-1 w-60 overflow-hidden  rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
                         <Image src={projects[index].imgSrc} alt="project image" width={1050} height={500} />
@@ -93,3 +97,5 @@ const ProjectPage = ({ params }: { params: { id: string }}) => {
 };
 
 export default ProjectPage
+
+
