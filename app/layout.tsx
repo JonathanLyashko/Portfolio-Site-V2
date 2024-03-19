@@ -4,9 +4,8 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
-
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.jonathanlyashko.com'),
   title: "Jonathan Lyashko",
   description: "Full Stack | Machine Learning | Computer Engineering student at the University of Waterloo. Let's build something the world needs",
   icons: {
@@ -19,7 +18,10 @@ export const metadata: Metadata = {
     apple: [
       { url: '/apple-touch-icon.png'}
     ]
-  }
+  },
+  openGraph: {
+    images: '/redHeadshot.jpeg',
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        </body>
     </html>
   );
 }
